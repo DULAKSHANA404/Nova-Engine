@@ -1,7 +1,6 @@
 #pragma once
 #include "Application.h"
 
-Nova::Application* Nova::CreateApplication();
 
 int main()
 {

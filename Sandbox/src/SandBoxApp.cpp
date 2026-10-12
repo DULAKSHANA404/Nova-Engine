@@ -2,8 +2,12 @@
 
 class Sandbox : public Nova::Application
 {
-	Nova::Application* Nova::CreateApplication()
-	{
-		return new Sandbox
-	}
+public:
+	Sandbox() {}
+	~Sandbox() {}
 };
+
+Nova::Application* Nova::CreateApplication()
+{
+	return new Sandbox();
+}

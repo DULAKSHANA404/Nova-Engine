@@ -7,6 +7,8 @@ namespace Nova
 	class NOVA_API Application
 	{
 	public:
+		Application();
+		virtual ~Application();
 		void Run();
 	};
 
