@@ -50,7 +50,7 @@
       <PreprocessorDefinitions>NOVA_PLATFORM_WINDOWS;NOVA_BUILD_DLL</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\GLFW\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\glad\include;$(SolutionDir)Dependencies\GLFW\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -71,7 +71,7 @@
       <PreprocessorDefinitions>NOVA_PLATFORM_WINDOWS;NOVA_BUILD_DLL</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\GLFW\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\glad\include;$(SolutionDir)Dependencies\GLFW\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -88,10 +88,15 @@
     <ClInclude Include="Nova\src\Nova\Application.h" />
     <ClInclude Include="Nova\src\Nova\Core.h" />
     <ClInclude Include="Nova\src\Nova\EntryPoint.h" />
+    <ClInclude Include="Nova\src\Nova\Renderer\Buffer.h" />
+    <ClInclude Include="Nova\src\Nova\Renderer\Shader.h" />
     <ClInclude Include="Nova\src\Platform\window.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\Dependencies\glad\src\glad.c" />
     <ClCompile Include="Nova\src\Nova\Application.cpp" />
+    <ClCompile Include="Nova\src\Nova\Renderer\Buffer.cpp" />
+    <ClCompile Include="Nova\src\Nova\Renderer\Shader.cpp" />
     <ClCompile Include="Nova\src\Platform\window.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

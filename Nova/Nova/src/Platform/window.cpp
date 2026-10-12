@@ -14,7 +14,7 @@ namespace Nova
 		return glfwWindowShouldClose(m_window);
 	}
 
-	void Window::Show()
+	void Window::OnUpdate()
 	{
 		glfwPollEvents();
 		glfwSwapBuffers(m_window);

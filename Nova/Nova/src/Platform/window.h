@@ -9,7 +9,7 @@ namespace Nova
 	public:
 		void WindowInit();
 		bool IsWindowOpen();
-		void Show();
+		void OnUpdate();
 
 
 	private:

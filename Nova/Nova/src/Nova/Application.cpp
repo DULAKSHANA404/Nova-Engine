@@ -1,22 +1,22 @@
 #include "Application.h"
-#include "../Platform/window.h"
+
 #include <iostream>
 
 namespace Nova
 {
 	void Application::Run()
 	{
-		std::cout << "Nova started..." << "\n";
-		Nova::Window window;
-		window.WindowInit();
-		std::cout << "Nova window initized.." << "\n";
-		while (!window.IsWindowOpen())
+		while (!m_window.IsWindowOpen())
 		{
-			window.Show();
+			m_window.OnUpdate();
 		}
-
 	}
 
-	Application::Application(){}
+	Application::Application()
+	{
+		std::cout << "Nova started..." << "\n";
+		m_window.WindowInit();
+		std::cout << "Nova window initized.." << "\n";
+	}
 	Application::~Application(){}
 }
