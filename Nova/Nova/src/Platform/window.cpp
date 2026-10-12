@@ -7,6 +7,7 @@ namespace Nova
 		glfwInit();
 		m_window = glfwCreateWindow(800, 600, "Nova", 0, 0);
 		glfwMakeContextCurrent(m_window);
+		gladLoadGL();
 	}
 
 	bool Window::IsWindowOpen()

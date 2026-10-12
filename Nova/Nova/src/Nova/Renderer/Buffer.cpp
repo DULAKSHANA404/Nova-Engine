@@ -2,7 +2,7 @@
 
 namespace Nova
 {
-	Buffer::Buffer()
+	void Buffer::BufferInit()
 	{
 		glGenVertexArrays(1, &VAO);
 		glBindVertexArray(VAO);

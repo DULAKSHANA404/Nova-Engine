@@ -89,6 +89,7 @@
     <ClInclude Include="Nova\src\Nova\Core.h" />
     <ClInclude Include="Nova\src\Nova\EntryPoint.h" />
     <ClInclude Include="Nova\src\Nova\Renderer\Buffer.h" />
+    <ClInclude Include="Nova\src\Nova\Renderer\ReadShaderSource.h" />
     <ClInclude Include="Nova\src\Nova\Renderer\Shader.h" />
     <ClInclude Include="Nova\src\Platform\window.h" />
   </ItemGroup>
@@ -98,6 +99,10 @@
     <ClCompile Include="Nova\src\Nova\Renderer\Buffer.cpp" />
     <ClCompile Include="Nova\src\Nova\Renderer\Shader.cpp" />
     <ClCompile Include="Nova\src\Platform\window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Nova\src\Nova\Renderer\Assets\Shaders\fragmentshader.glsl" />
+    <None Include="Nova\src\Nova\Renderer\Assets\Shaders\vertexshader.glsl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

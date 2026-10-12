@@ -1,5 +1,6 @@
 #pragma once
 
+#include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
 namespace Nova
@@ -7,6 +8,7 @@ namespace Nova
 	class Window
 	{
 	public:
+		Window() = default;
 		void WindowInit();
 		bool IsWindowOpen();
 		void OnUpdate();

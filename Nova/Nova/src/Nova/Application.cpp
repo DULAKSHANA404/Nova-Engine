@@ -17,6 +17,11 @@ namespace Nova
 		std::cout << "Nova started..." << "\n";
 		m_window.WindowInit();
 		std::cout << "Nova window initized.." << "\n";
+		m_buffer.BufferInit();
+		std::cout << "Nova Buffers initized.." << "\n";
+		m_shader.ShaderInit();
+		std::cout << "Shader and Programe compiled" << "\n";
+		
 	}
 	Application::~Application(){}
 }

@@ -3,6 +3,7 @@
 #include "Core.h"
 #include "../Platform/window.h"
 #include "Renderer/Buffer.h"
+#include "Renderer/Shader.h"
 
 namespace Nova
 {
@@ -11,6 +12,7 @@ namespace Nova
 	private:
 		Nova::Window m_window;
 		Nova::Buffer m_buffer;
+		Nova::Shaders m_shader;
 
 	public:
 		Application();

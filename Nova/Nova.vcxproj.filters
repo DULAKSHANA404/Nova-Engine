@@ -36,6 +36,9 @@
     <ClInclude Include="Nova\src\Nova\Renderer\Shader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Nova\src\Nova\Renderer\ReadShaderSource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Nova\src\Nova\Application.cpp">
@@ -53,5 +56,9 @@
     <ClCompile Include="..\Dependencies\glad\src\glad.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Nova\src\Nova\Renderer\Assets\Shaders\vertexshader.glsl" />
+    <None Include="Nova\src\Nova\Renderer\Assets\Shaders\fragmentshader.glsl" />
   </ItemGroup>
 </Project>
