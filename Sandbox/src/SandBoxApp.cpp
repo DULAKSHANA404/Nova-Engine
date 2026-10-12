@@ -9,5 +9,5 @@ public:
 
 Nova::Application* Nova::CreateApplication()
 {
-	return new Sandbox();
+	return new Sandbox;
 }

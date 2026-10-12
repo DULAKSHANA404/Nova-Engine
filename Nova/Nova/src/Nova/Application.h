@@ -8,7 +8,7 @@ namespace Nova
 	{
 	public:
 		Application();
-		virtual ~Application();
+		~Application();
 		void Run();
 	};
 
