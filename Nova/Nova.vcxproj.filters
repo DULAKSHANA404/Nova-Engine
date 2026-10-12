@@ -39,6 +39,9 @@
     <ClInclude Include="Nova\src\Nova\Renderer\ReadShaderSource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Nova\src\Nova\Renderer\data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Nova\src\Nova\Application.cpp">

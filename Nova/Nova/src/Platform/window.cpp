@@ -8,6 +8,7 @@ namespace Nova
 		m_window = glfwCreateWindow(800, 600, "Nova", 0, 0);
 		glfwMakeContextCurrent(m_window);
 		gladLoadGL();
+		glEnable(GL_DEPTH_BUFFER_BIT);
 	}
 
 	bool Window::IsWindowOpen()

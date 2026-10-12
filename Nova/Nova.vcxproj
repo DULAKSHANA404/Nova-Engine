@@ -89,6 +89,7 @@
     <ClInclude Include="Nova\src\Nova\Core.h" />
     <ClInclude Include="Nova\src\Nova\EntryPoint.h" />
     <ClInclude Include="Nova\src\Nova\Renderer\Buffer.h" />
+    <ClInclude Include="Nova\src\Nova\Renderer\data.h" />
     <ClInclude Include="Nova\src\Nova\Renderer\ReadShaderSource.h" />
     <ClInclude Include="Nova\src\Nova\Renderer\Shader.h" />
     <ClInclude Include="Nova\src\Platform\window.h" />

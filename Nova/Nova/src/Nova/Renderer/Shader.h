@@ -8,7 +8,9 @@ namespace Nova
 	protected:
 		GLuint VertexShader;
 		GLuint FragmentShader;
+	public:
 		GLuint ProgramID;
+		
 
 	public:
 		Shaders() = default;

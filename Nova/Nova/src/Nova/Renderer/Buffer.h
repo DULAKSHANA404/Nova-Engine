@@ -9,12 +9,13 @@ namespace Nova
 	protected:
 		GLuint VBO;
 		GLuint EBO;
+	public:
 		GLuint VAO;
 	public:
 		Buffer() = default;
 		void BufferInit();
 		void VertexBuffer(GLfloat* verticies, size_t sizeofverticies);
-		void ElementBuffer(GLfloat* indicies, size_t sizeofindicies);
+		void ElementBuffer(GLuint* indicies, size_t sizeofindicies);
 		void VertexArray();
 	};
 }

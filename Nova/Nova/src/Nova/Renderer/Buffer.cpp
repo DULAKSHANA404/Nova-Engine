@@ -21,7 +21,7 @@ namespace Nova
 		glEnableVertexAttribArray(0);
 	}
 
-	void Buffer::ElementBuffer(GLfloat* indicies, size_t sizeofindicies)
+	void Buffer::ElementBuffer(GLuint* indicies, size_t sizeofindicies)
 	{
 		glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeofindicies,indicies, GL_STATIC_DRAW);
 	}
