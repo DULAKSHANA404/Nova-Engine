@@ -1,6 +1,6 @@
 #version 330 core
 
-layout(location=0) vec3 Postitios;
+layout(location=0) in vec3 Postitios;
 
 void main()
 {
